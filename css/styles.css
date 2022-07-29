@@ -181,7 +181,7 @@ body {
 
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 0;
 
   display: block;
   width: 100%;
