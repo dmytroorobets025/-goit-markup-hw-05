@@ -963,7 +963,9 @@ ul {
   left: 50%;
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) 250ms scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: translate cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: var(--color-white);
 
