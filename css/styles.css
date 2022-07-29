@@ -74,10 +74,15 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
 
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo:hover,
 .logo:focus {
-  background-color: var(--color-white);
+  transform: scale(1.5);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link {
@@ -136,13 +141,13 @@ body {
 }
 
 .current {
-  color: var(--general-color);
+  color: var(--accent-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current::before {
+.link.current::before {
   content: "";
 
   position: absolute;
@@ -159,7 +164,7 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current::after {
+.link.current::after {
   content: "";
 
   position: absolute;
@@ -212,6 +217,9 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item {
@@ -520,16 +528,23 @@ button {
   height: 20px;
 }
 
+/* .social-buttons:hover {
+  background-color: var(--accent-color);
+  fill: var(--color-white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.social-buttons:focus,
 .social-buttons:hover {
   background-color: var(--accent-color);
   fill: var(--color-white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 
-.social-buttons:focus {
-  background-color: var(--accent-color);
-  fill: var(--color-white);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers {
@@ -568,18 +583,21 @@ button {
   color: var(--accent-color);
   border-color: var(--accent-color);
   border-radius: 4px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .color-customers {
   fill: currentColor;
 }
 
-.color-customers:hover {
-  fill: var(--accent-color);
-}
-
+.color-customers:hover,
 .color-customers:focus {
   fill: var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Підвал */
@@ -627,14 +645,13 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts:hover {
-  background-color: var(--primary-section-fon);
-  color: var(--accent-color);
-}
-
+.contacts:hover,
 .contacts:focus {
   background-color: var(--primary-section-fon);
   color: var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-in {
@@ -693,16 +710,14 @@ button {
   color: var(--color-white);
 }
 
-.social-buttons-footer:hover {
-  background-color: var(--accent-color);
-  fill: var(--color-white);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
+.social-buttons-footer:hover,
 .social-buttons-footer:focus {
   background-color: var(--accent-color);
   fill: var(--color-white);
-  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Прибирає список з "li" */
@@ -753,6 +768,17 @@ ul {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-of-buttons.current {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-of-buttons:hover,
@@ -858,6 +884,32 @@ ul {
   padding: 20px 24px;
 }
 
-/* background-repeat: no-repeat; */
-/* background-position: center; */
-/* background-size: cover; */
+/* test */
+
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop .is-hiden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 300px;
+  min-width: 400px;
+  padding: 15px;
+  background-color: #757575;
+} */
+
+/* test */
