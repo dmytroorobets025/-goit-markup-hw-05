@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="icon" href="../images/studio.img/GO-IT.jpg" type="image/jpg" />
+    <link rel="icon" href="./images/studio.img/go-it.jpg" type="image/jpg" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body-pozition">
@@ -368,6 +368,28 @@
                 </svg>
               </a>
             </div>
+          </div>
+          <div class="subscribe-box">
+            <h2 class="subscribe-title">Підпишіться на розсилку</h2>
+            <form class="subscribe-form" action="#" method="post">
+              <label class="visually-hidden" for="subscribe-mail"
+                >Введіть email</label
+              >
+              <input
+                class="subscribe-email"
+                type="email"
+                name="subscribe-email"
+                id="subscribe-email"
+                placeholder="E-mail"
+                required
+              />
+              <button class="subscription-button" type="submit">
+                Підписатися
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/icon.svg/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
