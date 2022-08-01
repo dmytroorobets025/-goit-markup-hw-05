@@ -418,6 +418,9 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-back-img {
@@ -429,6 +432,9 @@ button {
 .button-back:hover,
 .button-back:focus {
   color: var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Оформлення полей в модальному вікні */
