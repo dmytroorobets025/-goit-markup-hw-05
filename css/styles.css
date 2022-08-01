@@ -536,7 +536,6 @@ button {
   position: relative;
   margin: 20px auto 30px;
   padding-left: 23px;
-  padding-top: 2px;
   color: var(--primary-text-color);
   cursor: pointer;
   user-select: none;
@@ -544,12 +543,11 @@ button {
 
 .daw-frame {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: 0px;
+  height: 0px;
+  margin: 0px;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -557,10 +555,12 @@ button {
   position: absolute;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-text-color);
-  border-radius: 3px;
   left: 8px;
   top: 50%;
+
+  border: 2px solid var(--title-text-color);
+  border-radius: 3px;
+
   transform: translate(-50%, -50%);
   transition-property: background-color, border;
   transition-duration: 250ms;
@@ -572,6 +572,7 @@ button {
   left: 8px;
   top: 50%;
   transform: translate(-50%, -50%);
+
   fill: transparent;
   transition-property: fill;
   transition-duration: 250ms;
@@ -584,7 +585,7 @@ button {
 }
 
 .daw-frame:focus + .checked-box {
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--color-black);
 }
 
 .daw-frame:focus:checked:focus + .checked-box {
