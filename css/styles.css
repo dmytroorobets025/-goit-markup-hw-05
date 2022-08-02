@@ -459,6 +459,7 @@ button {
 }
 
 .label-for-modal {
+  pointer-events: none;
   margin-right: auto;
   margin-bottom: 4px;
   font-size: 12px;
@@ -543,11 +544,12 @@ button {
 
 .daw-frame {
   position: absolute;
-  width: 0px;
-  height: 0px;
-  margin: 0px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   border: 0;
   padding: 0;
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -585,8 +587,13 @@ button {
 }
 
 .daw-frame:focus + .checked-box {
+  border: 2px solid var(--accent-color);
+}
+/* test */
+.daw-frame:hover + .checked-box {
   border: 2px solid var(--color-black);
 }
+/* test */
 
 .daw-frame:focus:checked:focus + .checked-box {
   border: 2px solid var(--accent-color);
